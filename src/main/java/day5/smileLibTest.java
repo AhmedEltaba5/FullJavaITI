@@ -69,8 +69,8 @@ public class smileLibTest {
         titanic_test = titanic_test.drop("Name");
         titanic_test=titanic_test.omitNullRows();
         System.out.println(titanic_test.summary());
-        
-        Arrays.stream(randomForestModel.predict(titanic_test)).forEach(System.out::println);
+        //predict
+        System.out.println(Arrays.toString(randomForestModel.predict(titanic_test)));
           
     }
     
